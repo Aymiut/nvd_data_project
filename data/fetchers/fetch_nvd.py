@@ -8,7 +8,7 @@ def fetch_nvd_data():
     if response.status_code == 200:
         return response.json()  # Retourne les données JSON
     else:
-        return "Error fetching data"
+        return {"error": "Failed to fetch data from NVD API", "status_code": response.status_code}
 
 if __name__ == '__main__':
     vulnerabilities = fetch_nvd_data()
