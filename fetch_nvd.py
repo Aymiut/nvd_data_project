@@ -1,5 +1,5 @@
 import requests
-import json  # Pour afficher un JSON bien formaté
+import json 
 
 NVD_API_URL = 'https://services.nvd.nist.gov/rest/json/cves/2.0'
 
